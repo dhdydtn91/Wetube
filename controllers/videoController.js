@@ -1,7 +1,6 @@
-export const home = (req, res) => res.render("Home");
-export const search = (req, res) => res.rend("Search");
-export const videos = (req, res) => res.rend("Videos");
-export const upload = (req, res) => res.rend("Upload");
-export const videoDetail = (req, res) => res.rend("Video Detail");
-export const editVideo = (req, res) => res.rend("Edit Video");
-export const deleteVideo = (req, res) => res.rend("Delete Video");
+export const home = (req, res) => res.render("home");
+export const search = (req, res) => res.render("search");
+export const upload = (req, res) => res.render("upload");
+export const videoDetail = (req, res) => res.render("videoDetail");
+export const editVideo = (req, res) => res.render("editVideo");
+export const deleteVideo = (req, res) => res.render("deleteVideo");
