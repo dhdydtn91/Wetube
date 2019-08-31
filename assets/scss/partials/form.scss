@@ -1,0 +1,46 @@
+.form-container {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; // 하위 노드 세로로 한줄씩 나타냄
+  align-items: center;
+  form {
+    width: 100%; //form은 가로 100%까지 확장
+    max-width: 320px; //최대 320px
+    margin-bottom: 50px;
+    input:not([type="file"]),
+    .fileUpload {
+      display: flex; //block으로 나타냄
+      width: 100%; //마찬가지 100%가로까지 확장
+      padding-top: 10px;
+      padding-bottom: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      &:not(:last-child) {
+        // form 마지막하위노드 뺴고 모두
+        margin-bottom: 25px;
+      }
+    }
+    textarea {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      margin-bottom: 25px;
+    }
+    input[type="submit"] {
+      background-color: #8363a1;
+      color: white;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  a {
+    max-width: 320px;
+    width: 100%;
+  }
+  .fileUpload {
+    label {
+      width: 50px;
+      font-weight: 300;
+      margin-right: 10px;
+    }
+  }
+}

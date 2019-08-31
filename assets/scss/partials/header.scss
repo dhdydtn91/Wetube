@@ -1,0 +1,62 @@
+.header {
+  background: linear-gradient(-45deg, #8363a1 0%, #74a8c3 100%);
+  background: linear-gradient(
+    135deg,
+    #8363a1 0%,
+    #74a8c3 100%
+  ); //헤더 전체 색깔  바꾸기
+  margin-bottom: 50px;
+  .header__wrapper {
+    padding: 5px, 0px;
+    width: 100%;
+    margin: 0 auto; // 오른쪽으로 밀어줌
+    max-width: 1200px; // 가로길이 최대 1000px
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 안에 내용을 3개로 나누어 준다.
+    align-items: center; //가운데정렬
+    .header__column {
+      i {
+        color: white; //로고 바탕색 바꾸기
+        font-size: 40px;
+        margin: 5px 0px;
+      }
+      &:nth-child(2) {
+        width: 100%;
+        justify-self: center;
+      }
+      //검색창 위치 가운데로
+      &:last-child {
+        justify-self: end;
+      } //오른쪽 컬럼 끝으로
+      ul {
+        display: flex; // 가로배치
+        color: white;
+
+        text-transform: uppercase; //대문자로 전환
+        i {
+          font-size: 18px;
+          justify-content: baseline;
+          font-weight: 750;
+        }
+        li:not(:last-child) {
+          margin-right: 15px; //오른쪽 여백 간격 15px
+        }
+      }
+      form {
+        width: 100%; //입력창 가로100%
+        input {
+          padding: 7px 10px; //여백 7px 10px 7px 10px
+          width: 100%;
+          border-radius: 5px; // 모서리 둥글게 5px만큼깍는다
+          font-size: 14px; //글자크기 16px;
+          color: black;
+          font-weight: 600;
+          &::placeholder {
+            font-weight: 300; //폰트 굵기
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+      }
+    }
+  }
+}

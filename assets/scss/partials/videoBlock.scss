@@ -1,0 +1,15 @@
+.videoBlock {
+  video {
+    margin-bottom: 10px;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  .videoBlock__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .videoBlock__views {
+    font-size: 15px;
+  }
+}
