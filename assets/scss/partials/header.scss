@@ -16,9 +16,21 @@
     align-items: center; //가운데정렬
     .header__column {
       i {
+        margin: 15px 0px;
         color: white; //로고 바탕색 바꾸기
-        font-size: 40px;
-        margin: 5px 0px;
+        font-size: 30px;
+      }
+      span {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        align-items: center;
+      }
+      &:first-child {
+        i {
+          margin-right: 10px;
+        }
       }
       &:nth-child(2) {
         width: 100%;

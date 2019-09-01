@@ -1,8 +1,10 @@
 .videoBlock {
+  background-color: black;
   video {
     margin-bottom: 10px;
     max-width: 100%;
-    border-radius: 15px;
+    width: 100%;
+    height: 100%;
   }
   .videoBlock__title {
     font-size: 22px;

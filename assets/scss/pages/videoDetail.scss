@@ -1,4 +1,9 @@
 .video-detail__container {
+  video {
+    background-color: black;
+    width: 850px;
+    height: 500px;
+  }
   display: flex;
   flex-direction: column; //세로배치
   align-items: center; //가운데 정렬
