@@ -46,9 +46,13 @@
 
         text-transform: uppercase; //대문자로 전환
         i {
-          font-size: 18px;
+          font-size: 100%;
           justify-content: baseline;
           font-weight: 750;
+        }
+        span {
+          font-size: 100%;
+          margin: 0 6px;
         }
         li:not(:last-child) {
           margin-right: 15px; //오른쪽 여백 간격 15px

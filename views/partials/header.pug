@@ -9,20 +9,25 @@ header.header
                 input(type="text", placeholder="Search by term...", name="term")
         .header__column
             ul
-                if !user.isAuthenticationd
+                if !loggedUser
                     li
-                        i.far.fa-address-card
-                            a(href=routes.join)  Join
+                        a(href=routes.join)  
+                            i.far.fa-address-card 
+                            span  Join
                     li
-                        i.far.fa-check
-                            a(href=routes.login)  Log In
+                        a(href=routes.login)  
+                            i.far.fa-check 
+                            span  Log In
                 else 
                     li
-                        i.fas.fa-upload
-                            a(href=`/videos${routes.upload}`)  Upload
+                        a(href=`/videos${routes.upload}`)  
+                            i.fas.fa-upload
+                            span Upload
                     li
-                        i.fas.fa-user-alt
-                            a(href=routes.userDetail(user.id))  Profile
+                        a(href=routes.me) 
+                            i.fas.fa-user-alt
+                            span Profile
                     li
-                        i.fas.fa-sign-out-alt
-                            a(href=routes.logout)  Log Out
+                        a(href=routes.logout)  
+                            i.fas.fa-sign-out-alt
+                            span Log Out
