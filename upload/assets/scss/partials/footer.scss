@@ -1,0 +1,20 @@
+.footer {
+  margin: 50px 0;
+  padding-top: 50px;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex; //가로로 놓기
+  flex-direction: column; // 컬럼으로 2개의 컬럼으로 나누기
+  align-items: center; //가운데 정렬
+  .footer__icon {
+    //로고
+    color: rgba(0, 0, 0, 0.2); //색깔
+    font-size: 40px; //크기
+    margin-bottom: 20px;
+  }
+  .footer__text {
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

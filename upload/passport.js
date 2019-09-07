@@ -9,7 +9,6 @@ import {
 import routes from "./routes";
 
 passport.use(User.createStrategy());
-
 passport.use(
   new GithubStrategy(
     {
@@ -26,15 +25,12 @@ passport.use(
     {
       clientID: process.env.FB_ID,
       clientSecret: process.env.FB_SECRET,
-      callbackURL: `https://afraid-baboon-46.localtunnel.me${
-        routes.facebookCallback
-      }`,
+      callbackURL: ` https://3c096dea.ngrok.io${routes.facebookCallback}`,
       profileFields: ["id", "displayName", "photos", "email"],
       scope: ["public_profile", "email"]
     },
     facebookLoginCallback
   )
 );
-
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+passport.serializeUser((user, done) => done(null, user));
+passport.deserializeUser((user, done) => done(null, user));

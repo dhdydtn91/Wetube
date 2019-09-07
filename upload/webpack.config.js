@@ -22,11 +22,12 @@ const config = {
       {
         test: /\.(scss)$/,
         use: ExtractCSS.extract([
+          //그부부만 실행
           {
-            loader: "css-loader"
+            loader: "css-loader" // css 부분만 추출해주고
           },
           {
-            loader: "postcss-loader",
+            loader: "postcss-loader", //postCss-loader는 특정 pluhin들을 Css에 대해 실행시켜주고
             options: {
               plugins() {
                 return [autoprefixer({ browsers: "cover 99.5%" })];
@@ -34,7 +35,7 @@ const config = {
             }
           },
           {
-            loader: "sass-loader"
+            loader: "sass-loader" // Sass->Css로 옮겨주고
           }
         ])
       }

@@ -1,0 +1,33 @@
+header.header
+    .header__wrapper
+        .header__column
+            a(href=routes.home)
+                i.fab.fa-youtube 
+                span #{siteName} 
+        .header__column
+            form(action=routes.search, method="get")
+                input(type="text", placeholder="Search by term...", name="term")
+        .header__column
+            ul
+                if !loggedUser
+                    li
+                        a(href=routes.join)  
+                            i.far.fa-address-card 
+                            span  Join
+                    li
+                        a(href=routes.login)  
+                            i.far.fa-check 
+                            span  Log In
+                else 
+                    li
+                        a(href=`/videos${routes.upload}`)  
+                            i.fas.fa-upload
+                            span Upload
+                    li
+                        a(href=routes.me) 
+                            i.fas.fa-user-alt
+                            span Profile
+                    li
+                        a(href=routes.logout)  
+                            i.fas.fa-sign-out-alt
+                            span Log Out

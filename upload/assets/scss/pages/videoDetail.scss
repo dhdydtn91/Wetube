@@ -1,0 +1,41 @@
+.video-detail__container {
+  video {
+    background-color: black;
+    width: 850px;
+    height: 500px;
+  }
+  display: flex;
+  flex-direction: column; //세로배치
+  align-items: center; //가운데 정렬
+  .video__info {
+    width: 100%; //가로100%확장
+    max-width: 850px; //최대 850px
+    margin-top: 25px; //위여백 50px
+    button {
+      width: 100px;
+      margin-bottom: 15px; //아래여백 15px
+    }
+    .video__title,
+    .video__views,
+    .video__description {
+      display: block;
+      margin-bottom: 15px;
+    }
+    .video__title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .video__views {
+      font-size: 14px;
+    }
+    .video__description {
+      font-size: 18px;
+    }
+  }
+  .video__comments {
+    margin-top: 25px;
+    .video__comment-number {
+      font-size: 16px;
+    }
+  }
+}
