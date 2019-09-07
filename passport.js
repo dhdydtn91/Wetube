@@ -25,7 +25,7 @@ passport.use(
     {
       clientID: process.env.FB_ID,
       clientSecret: process.env.FB_SECRET,
-      callbackURL: `https://afraid-yak-31.localtunnel.me${routes.facebookCallback}`,
+      callbackURL: ` https://3c096dea.ngrok.io${routes.facebookCallback}`,
       profileFields: ["id", "displayName", "photos", "email"],
       scope: ["public_profile", "email"]
     },
